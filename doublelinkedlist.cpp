@@ -178,3 +178,6 @@ public:
         cout << "\NEnter roll number to search:";
         cin >> rollno;
         node *current = START;
+        // STEP 1: TRAVERSE TO FIND MATCHING ROLL NUMBER
+        while (current != NULL && current->noMhs != rollNo)
+            current = current->next;
