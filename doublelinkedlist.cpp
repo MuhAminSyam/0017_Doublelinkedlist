@@ -110,3 +110,12 @@ public:
         {
             // STEP 3: Hubungkan node sebelumnya ke node sesudah current
             current->prev->next = current->next;
+
+            // STEP 4: Jika current bukan node terakhir
+            if (current->next != NULL)
+                current->next->prev = current->prev;
+        }
+
+        delete current; // Hapus node dari memori
+        cout << "Record deleted successfully." << endl;
+    }
