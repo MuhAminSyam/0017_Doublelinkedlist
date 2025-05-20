@@ -167,3 +167,14 @@ public:
             i--;
         }
     }
+    void searchData(
+        {
+        if (START == NULL)
+        {
+            cout << "\nList is  empty" << endl;
+            return;
+        }
+        inty rollNo;
+        cout << "\NEnter roll number to search:";
+        cin >> rollno;
+        node *current = START;
