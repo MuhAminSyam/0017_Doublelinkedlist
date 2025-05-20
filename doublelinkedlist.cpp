@@ -108,3 +108,5 @@ public:
         }
         else
         {
+            // STEP 3: Hubungkan node sebelumnya ke node sesudah current
+            current->prev->next = current->next;
