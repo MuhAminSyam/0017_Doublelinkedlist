@@ -98,3 +98,13 @@ public:
             cout << "Record not found" << endl;
             return;
         }
+
+        // STEP 2: Jika node yang akan dihapus adalah node pertama
+        if (current == START)
+        {
+            START = current->next; // Pindahkan START ke node berikutnya
+            if (START != NULL)
+                START->prev = NULL; // Hilangkan hubungan ke node yang dihapus
+        }
+        else
+        {
