@@ -119,3 +119,33 @@ public:
         delete current; // Hapus node dari memori
         cout << "Record deleted successfully." << endl;
     }
+    void traverse()
+    {
+        if (START == NULL)
+        { // Cek apakah list kosong
+            cout << "\nList is empty" << endl;
+            return;
+        }
+
+        // Step 1: Tandai node pertama sebagai currentnode
+        node *currentnode = START;
+
+        // Step 2: Ulangi hingga currentnode menjadi NULL
+        cout << "\nRecords in ascending order of roll number are:\n";
+        int i = 0;
+
+        while (currentnode != NULL)
+        {
+            cout << i + 1 << ". " << currentnode->nodeMhs << endl; // Tampilkan data
+            currentnode = currentnode->next;                       // Step 3: Pindah ke node berikutnya
+            i++;
+        }
+    }
+
+    void revtraverse()
+    {
+        if (START == NULL)
+        {
+            cout << "nList is empty" << endl;
+            return;
+        }
