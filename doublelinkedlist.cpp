@@ -53,3 +53,8 @@ public:
 
             // Step 6: newnode->prev = NULL
             newnode->prev = NULL;
+
+            // Step 7: START = newnode
+            START = newnode;
+            return;
+        }
