@@ -23,8 +23,12 @@ public:
         START = NULL;
     }
 
+    // Fungsi untuk menambahkan node
     void AddNode()
     {
         int nim; // Variabel untuk input NIM
         cout << "\nEnter the roll number of the student: ";
         cin >> nim;
+
+        // Step 1: Alokasi memori untuk node baru
+        node *newnode = new node();
