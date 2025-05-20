@@ -32,3 +32,6 @@ public:
 
         // Step 1: Alokasi memori untuk node baru
         node *newnode = new node();
+
+        // Step 2: Isi data node dengan nim
+        newnode->nodeMhs = nim;
