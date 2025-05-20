@@ -50,3 +50,6 @@ public:
             // Step 5: START->prev = newnode (jika START tidak NULL)
             if (START != NULL)
                 START->prev = newnode;
+
+            // Step 6: newnode->prev = NULL
+            newnode->prev = NULL;
