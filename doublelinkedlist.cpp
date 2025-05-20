@@ -88,3 +88,13 @@ public:
         cin >> rollNo;
 
         node *current = START;
+
+        // STEP 1: Telusuri list untuk menemukan node dengan noMhs = rollNo
+        while (current != NULL && current->nodeMhs != rollNo)
+            current = current->next;
+
+        if (current == NULL) // Jika tidak ditemukan
+        {
+            cout << "Record not found" << endl;
+            return;
+        }
