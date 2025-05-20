@@ -149,3 +149,11 @@ public:
             cout << "nList is empty" << endl;
             return;
         }
+        // step 1: move to last mode
+        node *current = START;
+        int i = 0;
+        while (currenjtnode->next != NULL)
+        {
+            currentnode = currentnode->next;
+            i++;
+        }
