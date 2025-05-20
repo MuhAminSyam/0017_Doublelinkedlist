@@ -17,7 +17,14 @@ private:
     node *START; // Pointer awal dari linked list
 
 public:
+    // Constructor untuk inisialisasi linked list kosong
     DoubleLinkedList()
     {
         START = NULL;
     }
+
+    void AddNode()
+    {
+        int nim; // Variabel untuk input NIM
+        cout << "\nEnter the roll number of the student: ";
+        cin >> nim;
