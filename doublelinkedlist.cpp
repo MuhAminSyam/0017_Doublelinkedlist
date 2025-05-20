@@ -65,3 +65,13 @@ public:
         {
             current = current->next;
         }
+
+        // Step 9: Insert newnode antara current dan current->next
+        newnode->next = current->next; // Step 9a
+        newnode->prev = current;       // Step 9b
+
+        if (current->next != NULL) // Step 10: Hubungkan node setelah current ke newnode
+            current->next->prev = newnode;
+
+        current->next = newnode; // Step 11: Hubungkan current ke newnode
+    }
