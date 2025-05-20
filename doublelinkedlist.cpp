@@ -162,3 +162,8 @@ public:
         while (currentnode != NULL)
         {
             cout << i + 1 << "." << currentnode->next << "" << endl;
+            // step 3 move to previous node
+            current = currentnoide->previous;
+            i--;
+        }
+    }
