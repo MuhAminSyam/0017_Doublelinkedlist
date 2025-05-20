@@ -58,3 +58,10 @@ public:
             START = newnode;
             return;
         }
+
+        // Step 8: Cari posisi yang tepat untuk insert
+        node *current = START;
+        while (current->next != NULL && current->next->nodeMhs < nim)
+        {
+            current = current->next;
+        }
