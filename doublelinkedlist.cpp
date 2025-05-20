@@ -157,3 +157,8 @@ public:
             currentnode = currentnode->next;
             i++;
         }
+        // step 2: traverse backward
+        cout << "\nRecord is descending order of roll number are:\n";
+        while (currentnode != NULL)
+        {
+            cout << i + 1 << "." << currentnode->next << "" << endl;
