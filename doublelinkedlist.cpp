@@ -35,3 +35,12 @@ public:
 
         // Step 2: Isi data node dengan nim
         newnode->nodeMhs = nim;
+
+        // Step 3: Insert di awal jika list kosong atau nim lebih kecil
+        if (START == NULL || nim <= START->nodeMhs)
+        {
+            if (START != NULL && nim == START->nodeMhs)
+            {
+                cout << "\nDuplicate number not allowed" << endl;
+                return;
+            }
