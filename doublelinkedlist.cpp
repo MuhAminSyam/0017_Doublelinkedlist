@@ -75,3 +75,16 @@ public:
 
         current->next = newnode; // Step 11: Hubungkan current ke newnode
     }
+    void hapus()
+    {
+        if (START == NULL) // Cek apakah list kosong
+        {
+            cout << "\nList is empty" << endl;
+            return;
+        }
+
+        cout << "\nEnter the roll number of the student whose record is to be deleted: ";
+        int rollNo;
+        cin >> rollNo;
+
+        node *current = START;
