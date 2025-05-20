@@ -46,3 +46,7 @@ public:
             }
             // Step 4: newnode->next = START
             newnode->next = START;
+
+            // Step 5: START->prev = newnode (jika START tidak NULL)
+            if (START != NULL)
+                START->prev = newnode;
